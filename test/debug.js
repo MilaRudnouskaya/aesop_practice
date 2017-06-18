@@ -3,13 +3,11 @@
 describe("Damscan rose PDP", function(){
     it("should get the title right", function(){
         browser.url('/pdp-solo-6.html');
-        // browser.debug();
-
 
         var title = browser.getTitle();
-        // expect(title).to.equal('Aēsop');
-        expect(1).to.equal(1);
+        // browser.debug();
 
+        expect(title).to.equal('Aēsop');
 
      
         // browser.click('.shop-callout a');
