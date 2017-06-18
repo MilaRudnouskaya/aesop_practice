@@ -1,0 +1,24 @@
+{
+  "name": "aesop_practice",
+  "version": "1.0.0",
+  "description": "Aesop tests",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server sample-site -p 8303",
+    "test": "wdio",
+    "ghPages": "gh-pages -d sample-site",
+    "selser": "selenium-standalone"
+  },
+  "author": "Mila Rudnouskaya",
+  "dependencies": {
+    "gh-pages": "^0.11.0",
+    "http-server": "^0.9.0"
+  },
+  "devDependencies": {
+    "chai": "^4.0.2",
+    "selenium-standalone": "^5.11.2",
+    "wdio-mocha-framework": "^0.5.10",
+    "wdio-selenium-standalone-service": "0.0.8",
+    "webdriverio": "^4.8.0"
+  }
+}
