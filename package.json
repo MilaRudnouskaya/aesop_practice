@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "http-server sample-site -p 8303",
-    "test": "wdio",
+    "test": "source ./envfile.sh; wdio",
     "ghPages": "gh-pages -d sample-site",
     "selser": "selenium-standalone"
   },

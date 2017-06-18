@@ -1,5 +1,6 @@
-var baseUrl = 'http://release.cd.aesop-web-ui.on.work.co/';
+var basicAuth = process.env.BASIC_AUTH_USERNAME + ':' + process.env.BASIC_AUTH_PASSWORD + '@';
 
+var baseUrl = '@http://release.cd.aesop-web-ui.on.work.co/';
 
 exports.config = {
 
@@ -78,7 +79,7 @@ exports.config = {
     //
     // Set a base URL in order to shorten url command calls. If your url parameter starts
     // with "/", then the base url gets prepended.
-    baseUrl: baseUrl,
+    baseUrl: basicAuth + baseUrl,
     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 10000,
