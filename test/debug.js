@@ -1,5 +1,8 @@
 // trying out stuff ovah here
 
+const getMethods = (obj) => Object.getOwnPropertyNames(obj).filter(p => typeof obj[p] === 'function');
+
+
 describe("Damascan rose PDP", function(){
     it("should get the title right", function(){
         browser.url('/pdp-digital-gift-card.html');

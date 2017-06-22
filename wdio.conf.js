@@ -1,12 +1,7 @@
 var basicAuth = process.env.BASIC_AUTH_USERNAME + ':' + process.env.BASIC_AUTH_PASSWORD + '@';
-// basicAuth = '';
-
-var baseUrl = 'http://' + basicAuth + 'release.cd.aesop-web-ui.on.work.co/';
+var baseUrl = 'http://' + basicAuth + process.env.BASE_URL;
 
 exports.config = {
-
-
-    
     //
     // ==================
     // Specify Test Files
