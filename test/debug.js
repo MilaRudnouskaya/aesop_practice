@@ -6,6 +6,7 @@ const getMethods = (obj) => Object.getOwnPropertyNames(obj).filter(p => typeof o
 describe("Damascan rose PDP", function(){
     it("should get the title right", function(){
         browser.url('/pdp-digital-gift-card.html');
+       
 
         var title = browser.getTitle();
         // browser.debug();

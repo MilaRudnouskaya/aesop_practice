@@ -1,5 +1,6 @@
-var basicAuth = process.env.BASIC_AUTH_USERNAME + ':' + process.env.BASIC_AUTH_PASSWORD + '@';
-var baseUrl = 'http://' + basicAuth + process.env.BASE_URL;
+    // var basicAuth = process.env.BASIC_AUTH_USERNAME + ':' + process.env.BASIC_AUTH_PASSWORD + '@';
+    // var baseUrl = 'http://' + basicAuth + process.env.BASE_URL;
+    var baseUrl = 'http://' + process.env.BASE_URL;
 
 exports.config = {
     //
